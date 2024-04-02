@@ -1,6 +1,6 @@
-num1 = float(input("enter first num :"))
-num2 = float(input("enter second num :"))
+num1 = int(input("Enter a number :"))
 
-sum = num1 + num2
-
-print(f"Totla value is : {sum}")
+if num1 % 2 == 0:
+    print(f"{num1} is even number.")
+else :
+    print(f"{num1} is odd number.")

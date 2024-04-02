@@ -72,3 +72,4 @@ school = "LTE"
 
 total = "My name is " + my_name + "." + "I am  " + age + " years old. I Live in " + town 
 print(total)
+
