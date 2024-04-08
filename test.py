@@ -1,6 +1,16 @@
-num1 = int(input("Enter a number :"))
+# name =input("Name: ")
+# pwd = input("password: ")
 
-if num1 % 2 == 0:
-    print(f"{num1} is even number.")
-else :
-    print(f"{num1} is odd number.")
+# if name == "sit" or pwd == "0000":
+#     print("Login successful")
+# else:
+#     print("Something wrong, please try again!")
+
+
+
+age = 21
+
+if not age<18 :
+    print("welcome!")
+else:
+    print("Try again.")
