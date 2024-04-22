@@ -20,8 +20,13 @@ else:
 
 
 print(f'''
-        Your name : {name.title()}
-        Your BMI value is : {bmi}
-        Your weight is in the {health} category
+      
+    -------------------------------------------------
+    |                                                            
+    |   Your name : {name.title()}                               
+    |   Your BMI value is : {bmi}                     
+    |   Your weight is in the {health} category      
+    |                                                
+    --------------------------------------------------
 
 ''')
