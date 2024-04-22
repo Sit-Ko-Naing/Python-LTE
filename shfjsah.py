@@ -1,6 +1,6 @@
-usr = input("Enter name: ")
-age = int(input("Enter age:"))
+dog_names = ["Mike", "Lucky", "Milo", "Ollie"]
+dog_food=["bone","beef","chicken","biscuit"]
 
-name = usr.upper()
+dog_food.insert(0,"salmon")
 
-print(name)
+print(f"{dog_names[2]} now eats {dog_food[0]}")
