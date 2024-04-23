@@ -1,20 +1,28 @@
-name = input("Enter your name : ")
-weight = int(input("Enter your weight (lb) : ")) * 0.45      #kg
-height = int(input("Enter your height (cm) :")) / 100  #meter
+import random       # libs
 
+computer_num = random.randint(1,5) # 1 ----- 10        #cmp number
+user_num = int(input("Enter a number [1,5] : ")) #usr_input_num --23
 
-bmi = weight / height**2 
-bmi = round(bmi,2)
-
-if bmi < 18.5:
-    print("Your weight is under weight.")
-elif 18.5 < bmi < 24.9:
-    print("Your weight is Healthy weight.")
-elif 25.0 < bmi < 29.9:
-    print("Your weight is Overweight.")
-elif bmi > 30.0:
-    print("Your weight is obesity.")
+if user_num <= 5:
+    if computer_num > user_num:
+        print(f"Computer win. cp {computer_num} | usr {user_num}")
+    elif computer_num < user_num:
+        print(f"User win. cp {computer_num} | usr {user_num}") 
+    elif computer_num == user_num:
+        print(f"Draw. cp {computer_num} | usr {user_num} ")  
+    else:
+        print("Something Wrong. Try again.")
 else:
-    print("Something wrong.")
+    print("Sorry, you can input between 1 to 10.")
 
-print(f"Your BMI value is {bmi}")
+
+
+
+
+
+
+
+# if user_num  <= 10:
+
+# else:
+#     print("Sorry, you can input between 1 to 10")
