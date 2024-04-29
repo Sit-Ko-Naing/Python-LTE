@@ -1,52 +1,21 @@
-# num1 = int(input("Enter num1: "))
-# num2 = int(input("Enter num2: "))
+# for loop  | while loop | do while loop
 
-# lst = []
-# lst.append(num1,num2)
+import random
 
-# print(lst)
+player1 = 0
+player2 = 0
 
+is_game_on = True
 
-# for i in range(1,4):
-#    for j in range(1,4):
-#        print(i*j, end =" ")
-#    print()
+while is_game_on:
+    player1 = player1 + random.randint(1,100)
+    player2 = player2 + random.randint(1,100)
 
+    if player1 > 100:
+        print(f"Player1 win the game with {player1} marks")
+        is_game_on = False
+    elif player2 > 100:
+        print(f"Player2 win the game with {player2} marks")
+        is_game_on = False
 
-# for i in range(1,51):
-#     if i % 3 == 0 and i % 5 == 0:
-#         print("FizzBuzz")
-#     elif i % 3 == 0:
-#         print("Fizz")
-#     elif i % 5 == 0:
-#         print("Buzz")
-#     else:
-#         print(i)
-
-
-lst = [1,2,3,4,5.2,6,7,"mgmg"]
-
-for i in lst:
-   print(i)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
