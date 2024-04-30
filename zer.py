@@ -1,21 +1,33 @@
-# for loop  | while loop | do while loop
+# #Set data type {}
 
-import random
+# lst1 = [23,32,23,2,32,32,23,23,23,3,232,3,23,23,23,23,23,23]
+# set1 = set(lst1)
 
-player1 = 0
-player2 = 0
+# print(set1)
 
-is_game_on = True
+# # -------------------------------------------
 
-while is_game_on:
-    player1 = player1 + random.randint(1,100)
-    player2 = player2 + random.randint(1,100)
+# empty_set = set()
+# empty_set.add(1)
+# empty_set.add(2)
+# empty_set.add(3)
+# empty_set.add(4)
 
-    if player1 > 100:
-        print(f"Player1 win the game with {player1} marks")
-        is_game_on = False
-    elif player2 > 100:
-        print(f"Player2 win the game with {player2} marks")
-        is_game_on = False
+# print(empty_set)
 
-   
+# empty_set.remove(4)
+# print(empty_set)
+
+# -----------------------------------------------------
+
+set_a = {1,2,3,4,5,6}
+set_b = {4,5,6,7,8,9}
+
+uni_set = set_a.union(set_b)
+print(uni_set)   #{1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+inter_set = set_a.intersection(set_b)
+print(inter_set)  #{4, 5, 6}
+
+diff_set = set_a.difference(set_b)
+print(diff_set)   #
