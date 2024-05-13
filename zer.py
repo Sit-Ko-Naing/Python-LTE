@@ -1,33 +1,21 @@
-# #Set data type {}
+def add(n1,n2):
+    n3 = n1 + 1
+    n4 = n2 + 1
+    return n3 + n4
 
-# lst1 = [23,32,23,2,32,32,23,23,23,3,232,3,23,23,23,23,23,23]
-# set1 = set(lst1)
+def sub(n1,n2):
+    return n1 - n2
 
-# print(set1)
+num1 = int(input("Enter 1st number : "))
+num2 = int(input("Enter 2nd number : "))
+opt = input("addition for A | subtraction for S : ")
 
-# # -------------------------------------------
+if opt == "A":
+    result = add(num1,num2)
+elif opt == "S":
+    result = sub(num1,num2)
+else:
+    print("Try again.")
 
-# empty_set = set()
-# empty_set.add(1)
-# empty_set.add(2)
-# empty_set.add(3)
-# empty_set.add(4)
 
-# print(empty_set)
-
-# empty_set.remove(4)
-# print(empty_set)
-
-# -----------------------------------------------------
-
-set_a = {1,2,3,4,5,6}
-set_b = {4,5,6,7,8,9}
-
-uni_set = set_a.union(set_b)
-print(uni_set)   #{1, 2, 3, 4, 5, 6, 7, 8, 9}
-
-inter_set = set_a.intersection(set_b)
-print(inter_set)  #{4, 5, 6}
-
-diff_set = set_a.difference(set_b)
-print(diff_set)   #
+print(f"Total result : {result}")

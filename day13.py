@@ -78,8 +78,29 @@ numberss = [10,20,3,14,52,123,22]
 result = 1
 
 for num in numberss:
-    if num == 123:
-        continue
+  
     result = result * num
 
 print(f"the result is : {result}")
+
+# ------------------------------------------------------------------------------
+
+i = 0
+while i <= 5 :
+    if i == 3:
+        i += 1
+        continue
+    print(i, "Hello World")
+    i +=1
+print("out of while loop!!!")
+
+# --------------------------------------------------------------------
+
+for val in "Python":
+    if val == "h":
+        continue
+    print(val)
+print("Out of for loop!!!")
+
+# ------------------------------------------------------
+
