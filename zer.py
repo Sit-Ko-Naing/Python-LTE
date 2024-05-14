@@ -1,21 +1,8 @@
-def add(n1,n2):
-    n3 = n1 + 1
-    n4 = n2 + 1
-    return n3 + n4
+import area
 
-def sub(n1,n2):
-    return n1 - n2
+usr1 = int(input("Width : "))
+usr2 = int(input("Height : "))
 
-num1 = int(input("Enter 1st number : "))
-num2 = int(input("Enter 2nd number : "))
-opt = input("addition for A | subtraction for S : ")
+print(f"Total area : {area.area(usr1,usr2)}")
+print(f"Total result : {area.addition(usr1,usr2)}")
 
-if opt == "A":
-    result = add(num1,num2)
-elif opt == "S":
-    result = sub(num1,num2)
-else:
-    print("Try again.")
-
-
-print(f"Total result : {result}")
