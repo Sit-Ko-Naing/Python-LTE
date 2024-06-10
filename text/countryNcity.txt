@@ -1,0 +1,9 @@
+Thailand/Bangkok
+Freance/Paris 
+Korea/Seoul 
+Japan/Tokyo 
+America/Washington,D.C
+India/New_Delhi
+Myanmar/Naypyitaw
+China/Beijing
+Vietnam/Hanoi
