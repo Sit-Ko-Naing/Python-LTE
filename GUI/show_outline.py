@@ -30,7 +30,7 @@ def display_outline(outlines):
                 font='Arial 28 bold', text= "See you in Level-2 !")
 
 def clicked():
-    outlines = get_outline("outline.txt")
+    outlines = get_outline("C:\\Users\\Huawei Matebook 15\\OneDrive\\Desktop\\Python-LTE\\text\\countryNcity.txt")
     display_outline(outlines)
 
 btn = Button(window, text="Let's Check Out!", command=clicked)

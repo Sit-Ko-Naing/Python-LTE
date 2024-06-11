@@ -1,0 +1,8 @@
+More data types : float, tuple, dictionaries, sets
+Interacting with the program to enter the data
+Functions with arguments, parameters, return values
+Python Modules
+Reading text files
+Foundation of Object oriented programming
+Building graphical user interface(GUI) with tkinter
+Projects (Build games, puzzles, anything you want)
