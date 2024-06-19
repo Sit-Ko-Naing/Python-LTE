@@ -4,7 +4,8 @@ from tkinter import font
 def celsius_to_fahrenheit():
     celsius = float(entry_celsius.get())
     fahrenheit = (celsius * 9/5) + 32
-    label_result.config(text=f'{fahrenheit:.2f} °F',bg='#add8e6')
+    label_result1.config(text=f'{fahrenheit:.2f} °F',bg='#add8e6')
+    label_result2.config(text=f'{celsius:.2f} °C',bg='#add8e6')
 
 
 root = tk.Tk()
@@ -27,7 +28,10 @@ tk.Button(root, text="Fahrenheit",font=custom_font, bg='#87cefa', fg='black', co
 
 
 
-label_result = tk.Label(root, text="Result", font=custom_font, bg='#f0f8ff')
-label_result.grid(row=1, column=1, pady=10)
+label_result1 = tk.Label(root, text="Result", font=custom_font, bg='#f0f8ff')
+label_result1.grid(row=1, column=1, pady=10)
+
+label_result2 = tk.Label(root, text="Output", font=custom_font, bg='#f0f8ff')
+label_result2.grid(row=1, column=2, pady=10)
 
 root.mainloop()
